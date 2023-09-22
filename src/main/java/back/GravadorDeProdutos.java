@@ -8,7 +8,7 @@ public class GravadorDeProdutos {
         ObjectInputStream in = null;
         try {
             in = new ObjectInputStream(new FileInputStream("produtos.txt"));
-            return (Map<Integer,Product>) in.readObject(); //provavelmente tem que settar o map aqui
+            return (Map<Integer,Product>) in.readObject(); 
         } catch (FileNotFoundException e) {
             throw new IOException("");
         } catch (IOException e) {
